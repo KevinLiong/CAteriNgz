@@ -1,0 +1,94 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../Assets/Pictures/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    background-color: #80ED99;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px 0;
+}
+
+.form-container h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #213A57;
+}
+
+.form-container h3 {
+    margin: 5px 0 20px;
+}
+
+.form-container label {
+    float: left;
+    margin-bottom: 2px;
+    font-weight: bold;
+    display: block;
+}
+
+.form-container input, 
+.form-container select, 
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.message {
+    display: flex;
+    float: left;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-container input {
+    margin-right: 1px;
+    width: auto;
+}
+
+.checkbox-container label {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.form-container button {
+    background-color: #0AD1C8;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button:hover {
+    background-color: #14919B;
+}

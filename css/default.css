@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(../Fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: auto;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    display: block;
+    margin: 5px auto;
+    background-color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links .links {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .links.active,
+.nav-links .links:hover {
+    background-color: #45DFB1;
+    color: white;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #14919B;
+    color: white;
+    padding: 50px 0 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact h3 {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        z-index: 10;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links .links {
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+    }
+
+    .footer-bottom {
+        margin: 10px 0;
+        padding-top: 20px;
+        border-top: 1px solid white;
+    }
+}

@@ -1,0 +1,84 @@
+.image-container {
+    background-image: url('../Assets/Pictures/pexels-fauxels-3184183.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-text {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-text h1 {
+    font-size: 60px;
+}
+
+.testimonial-container {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.testimonial-container h2 {
+    font-size: 36px;
+    color: #213A57;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.testimonial-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.testimonial-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.testimonial-job {
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.testimonial-text {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

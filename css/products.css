@@ -1,0 +1,131 @@
+.image-container {
+    background-image: url('../Assets/Pictures/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-text {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image-text h1 {
+    font-size: 60px;
+}
+
+.food-categories {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #45DFB1;
+}
+
+.food-categories h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #213A57;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+.category-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    font-size: 20px;
+}
+
+.product-category {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.product-category h2 {
+    font-size: 36px;
+    color: #213A57;
+    margin-bottom: 40px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+}
+
+.button {
+    background-color: #0AD1C8;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #14919B;
+}
+
+@media screen and(max-width: 768px) {
+    .category-cards,
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card,
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

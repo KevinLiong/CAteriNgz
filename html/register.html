@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img class="logo-image" src="../Assets/Icons/logo.png" alt="Logo">
+                <p class="logo-text">CAteriNgz</p>
+            </a>
+            
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a class="links" href="../html/home.html">Home</a></li>
+                <li><a class="links" href="../html/products.html">Products</a></li>
+                <li><a class="links" href="../html/testimonial.html">Testimonial</a></li>
+                <li><a class="links" href="../html/aboutus.html">About Us</a></li>
+                <li><a class="links active" href="../html/register.html">Register</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="background">
+        <div class="form-container">
+            <h1>CAteriNgz</h1>
+            <h3>Homemade Culinary</h3>
+
+            <form action="" method="get">
+                <label>Name</label>
+                <input type="text" id="name" required>
+                <p id="name-error" class="message"></p>
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+                <p id="email-error" class="message"></p>
+
+                <label>Address</label>
+                <input type="text" id="address" required>
+                <p id="address-error" class="message"></p>
+
+                <label>Gender</label>
+                <select name="" id="gender">
+                    <option value="" disbaled></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <p id="gender-error" class="message"></p>
+
+                <label>Date of Birth</label>
+                <input type="date" id="dob" required>
+                <p id="dob-error" class="message"></p>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement" required>
+                    <label>I agree to the <a href="">Privacy Requirements</a></label>
+                </div>
+                <p id="checkbox-error" class="message"></p>
+
+                <button type="button" onclick="validate()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Icons/logo.png" alt="Logo">
+                <p>The best homemade culinary</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: cateringz@gmail.com</p>
+                <p>Phone: 021-56898867</p>
+                <p>Address: 4 Fajar Baru, Malang, Indonesia</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CAteriNgz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>
